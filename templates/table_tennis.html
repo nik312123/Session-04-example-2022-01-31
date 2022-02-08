@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Table Tennis Fan Club</title>
+    <link rel="stylesheet" href="/static/table_tennis.css">
+    <script src="/static/table_tennis.js" defer></script>
+</head>
+<body>
+    <h1>Table Tennis Fan Club</h1>
+    <img src="https://i.pinimg.com/originals/15/46/f6/1546f6d3a449d3763de9f4c6d44c5176.png" alt="Table Tennis"/>
+    <p class="credits">
+        Credit to <a href="https://www.pinterest.com/pin/683562049668634160/" target="_blank">Society6</a>
+    </p>
+    <p>Subscribe to our newsletter:</p>
+    <label for="register-email"></label><input id="register-email" type="text" placeholder="Enter email"/>
+    <button onclick="addSubscriber()">Subscribe</button>
+    <p id="bad-email">Error: Invalid email!</p>
+    <p id="subscribers-title">Current subscribers:</p>
+    <ul id="subscribers"></ul>
+</body>
+</html>
