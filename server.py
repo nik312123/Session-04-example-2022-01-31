@@ -12,3 +12,9 @@ def main_page():
 @app.route('/table-tennis')
 def table_tennis():
     return render_template('table_tennis.html')
+
+
+@app.route('/table-tennis-encouragement')
+def table_tennis_encouragement():
+    name = request.args.get("myname", "null")
+    return render_template("table-tennis-encouragement.html", name = name)

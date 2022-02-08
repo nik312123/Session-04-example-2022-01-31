@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Table Tennis Encouragement</title>
+    <link rel="stylesheet" href="/static/table_tennis.css">
+    
+    <!-- Credit to https://stackoverflow.com/a/13828914 -->
+    <!-- IE -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/table-tennis.ico"/>
+    <!-- other browsers -->
+    <link rel="icon" type="image/x-icon" href="/static/table-tennis.ico"/>
+    
+    <script src="/static/table_tennis.js" defer></script>
+</head>
+<body>
+    <h1>Table Tennis Encouragement</h1>
+    {% if name == "null" %}
+        <p>I don't think I know who you are. Could you throw a <code>?myname=something</code> at the end of the url there
+           for me?</p>
+    {% else %}
+        <h1>I believe in you, {{ name }}!</h1>
+    {% endif %}
+</body>
+</html>
